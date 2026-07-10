@@ -25,54 +25,168 @@ content="La televisión argentina, provincia por provincia.">
 
 <link rel="stylesheet" href="style.css">
 
-</head>
+/*
+====================================================
+ Pantalla Federal
+ style.css
+ Versión 0.2 - Identidad
+====================================================
+*/
 
-<body>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-<header class="hero">
+body{
+    background:#f2f4f7;
+    color:#333;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-<img
-src="assets/portada/senal-ajuste.jpg"
-alt="Carta de ajuste"
-class="hero-img">
+/* =======================
+   CABECERA
+======================= */
 
-<div class="hero-texto">
+.hero{
 
-<h1>Pantalla Federal</h1>
+    max-width:1100px;
 
-<p>La televisión argentina, provincia por provincia.</p>
+    margin:30px auto;
 
-<input
-id="buscar"
-type="search"
-placeholder="Buscar canal, ciudad o provincia...">
+    background:#ffffff;
 
-</div>
+    border-radius:18px;
 
-</header>
+    overflow:hidden;
 
-<main id="contenido">
+    box-shadow:0 8px 25px rgba(0,0,0,.10);
 
-<!--
-Todo el contenido será generado por JavaScript.
+}
 
-Menú
-Provincias
-Canales
-Buscador
-Destacados
--->
+.hero-img{
 
-</main>
+    width:100%;
 
-<footer>
+    display:block;
 
-© 2026 Pantalla Federal
+}
 
-</footer>
+.hero-texto{
 
-<script src="script.js"></script>
+    padding:35px;
 
-</body>
+    text-align:center;
 
-</html>
+}
+
+.hero h1{
+
+    font-size:42px;
+
+    color:#0A4EA3;
+
+    margin-bottom:12px;
+
+}
+
+.hero p{
+
+    color:#666;
+
+    font-size:20px;
+
+    margin-bottom:25px;
+
+}
+
+/* =======================
+   BUSCADOR
+======================= */
+
+#buscar{
+
+    width:100%;
+
+    max-width:650px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:1px solid #d6d6d6;
+
+    font-size:18px;
+
+}
+
+#buscar:focus{
+
+    outline:none;
+
+    border-color:#0A4EA3;
+
+}
+
+/* =======================
+   CONTENIDO
+======================= */
+
+#contenido{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:20px;
+
+}
+
+/* =======================
+   FOOTER
+======================= */
+
+footer{
+
+    text-align:center;
+
+    color:#777;
+
+    padding:35px;
+
+    font-size:15px;
+
+}
+
+/* =======================
+   CELULAR
+======================= */
+
+@media(max-width:768px){
+
+.hero{
+
+    margin:15px;
+
+}
+
+.hero-texto{
+
+    padding:25px;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+}
