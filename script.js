@@ -2,68 +2,40 @@
 ====================================================
  Pantalla Federal
  script.js
- Versión 0.3 - Menú Inteligente
+ Versión 0.4 - Datos
 ====================================================
 */
 
-const menu = [
+async function cargarMenu() {
 
-{
-    icono:"🇦🇷",
-    titulo:"Explorar provincias",
-    texto:"Conocé la televisión de cada rincón del país."
-},
+    const respuesta = await fetch("datos/menu.json");
 
-{
-    icono:"⭐",
-    titulo:"Canales destacados",
-    texto:"Las señales más vistas."
-},
+    const menu = await respuesta.json();
 
-{
-    icono:"📡",
-    titulo:"TV Pública",
-    texto:"Canales nacionales y provinciales."
-},
+    const contenido = document.getElementById("contenido");
 
-{
-    icono:"🎓",
-    titulo:"Universitarios",
-    texto:"Universidades públicas argentinas."
-},
+    const contenedor = document.createElement("div");
 
-{
-    icono:"❤️",
-    titulo:"Favoritos",
-    texto:"Tus canales preferidos."
+    contenedor.className = "menu";
+
+    menu.forEach(item => {
+
+        const tarjeta = document.createElement("div");
+
+        tarjeta.className = "card";
+
+        tarjeta.innerHTML = `
+            <div class="icono">${item.icono}</div>
+            <h2>${item.titulo}</h2>
+            <p>${item.texto}</p>
+        `;
+
+        contenedor.appendChild(tarjeta);
+
+    });
+
+    contenido.appendChild(contenedor);
+
 }
 
-];
-
-const contenido = document.getElementById("contenido");
-
-const contenedor = document.createElement("div");
-
-contenedor.className = "menu";
-
-menu.forEach(item=>{
-
-const tarjeta = document.createElement("div");
-
-tarjeta.className="card";
-
-tarjeta.innerHTML=`
-
-<div class="icono">${item.icono}</div>
-
-<h2>${item.titulo}</h2>
-
-<p>${item.texto}</p>
-
-`;
-
-contenedor.appendChild(tarjeta);
-
-});
-
-contenido.appendChild(contenedor);
+cargarMenu();
