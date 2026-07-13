@@ -1,1 +1,170 @@
-
+[
+  {
+    "id": "caba",
+    "nombre": "Ciudad Autónoma de Buenos Aires",
+    "region": "amba",
+    "capital": "Buenos Aires",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "buenos-aires",
+    "nombre": "Buenos Aires",
+    "region": "amba",
+    "capital": "La Plata",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "catamarca",
+    "nombre": "Catamarca",
+    "region": "noa",
+    "capital": "San Fernando del Valle de Catamarca",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "chaco",
+    "nombre": "Chaco",
+    "region": "nea",
+    "capital": "Resistencia",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "chubut",
+    "nombre": "Chubut",
+    "region": "patagonia",
+    "capital": "Rawson",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "cordoba",
+    "nombre": "Córdoba",
+    "region": "centro",
+    "capital": "Córdoba",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "corrientes",
+    "nombre": "Corrientes",
+    "region": "nea",
+    "capital": "Corrientes",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "entre-rios",
+    "nombre": "Entre Ríos",
+    "region": "centro",
+    "capital": "Paraná",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "formosa",
+    "nombre": "Formosa",
+    "region": "nea",
+    "capital": "Formosa",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "jujuy",
+    "nombre": "Jujuy",
+    "region": "noa",
+    "capital": "San Salvador de Jujuy",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "la-pampa",
+    "nombre": "La Pampa",
+    "region": "patagonia",
+    "capital": "Santa Rosa",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "la-rioja",
+    "nombre": "La Rioja",
+    "region": "noa",
+    "capital": "La Rioja",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "mendoza",
+    "nombre": "Mendoza",
+    "region": "cuyo",
+    "capital": "Mendoza",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "misiones",
+    "nombre": "Misiones",
+    "region": "nea",
+    "capital": "Posadas",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "neuquen",
+    "nombre": "Neuquén",
+    "region": "patagonia",
+    "capital": "Neuquén",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "rio-negro",
+    "nombre": "Río Negro",
+    "region": "patagonia",
+    "capital": "Viedma",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "salta",
+    "nombre": "Salta",
+    "region": "noa",
+    "capital": "Salta",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "san-juan",
+    "nombre": "San Juan",
+    "region": "cuyo",
+    "capital": "San Juan",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "san-luis",
+    "nombre": "San Luis",
+    "region": "cuyo",
+    "capital": "San Luis",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "santa-cruz",
+    "nombre": "Santa Cruz",
+    "region": "patagonia",
+    "capital": "Río Gallegos",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "santa-fe",
+    "nombre": "Santa Fe",
+    "region": "centro",
+    "capital": "Santa Fe",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "santiago-del-estero",
+    "nombre": "Santiago del Estero",
+    "region": "noa",
+    "capital": "Santiago del Estero",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "tierra-del-fuego",
+    "nombre": "Tierra del Fuego",
+    "region": "patagonia",
+    "capital": "Ushuaia",
+    "cantidadCanales": 0
+  },
+  {
+    "id": "tucuman",
+    "nombre": "Tucumán",
+    "region": "noa",
+    "capital": "San Miguel de Tucumán",
+    "cantidadCanales": 0
+  }
+]
