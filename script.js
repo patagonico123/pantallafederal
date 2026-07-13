@@ -7,14 +7,10 @@
 */
 
 
-const botonProvincias = document.getElementById("btnProvincias");
-
-
-botonProvincias.addEventListener("click", mostrarProvincias);
-
-
-
-async function mostrarProvincias() {
+botonProvincias.addEventListener("click", function(){
+    console.log("BOTON FUNCIONA");
+    mostrarProvincias();
+});
 
 
     const contenido = document.getElementById("contenido");
