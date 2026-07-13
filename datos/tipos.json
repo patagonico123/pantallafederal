@@ -1,1 +1,42 @@
-
+[
+  {
+    "id": "publico",
+    "nombre": "Público",
+    "descripcion": "Canales estatales provinciales, nacionales o de servicio público"
+  },
+  {
+    "id": "privado",
+    "nombre": "Privado",
+    "descripcion": "Canales comerciales y redes privadas"
+  },
+  {
+    "id": "universitario",
+    "nombre": "Universitario",
+    "descripcion": "Señales pertenecientes a universidades públicas o privadas"
+  },
+  {
+    "id": "comunitario",
+    "nombre": "Comunitario",
+    "descripcion": "Canales sociales, barriales o de comunicación comunitaria"
+  },
+  {
+    "id": "cooperativo",
+    "nombre": "Cooperativo",
+    "descripcion": "Señales gestionadas por cooperativas o entidades regionales"
+  },
+  {
+    "id": "religioso",
+    "nombre": "Religioso",
+    "descripcion": "Canales con programación de orientación religiosa"
+  },
+  {
+    "id": "alternativo",
+    "nombre": "Alternativo",
+    "descripcion": "Propuestas independientes, culturales o experimentales"
+  },
+  {
+    "id": "cultural",
+    "nombre": "Cultural",
+    "descripcion": "Canales dedicados a cultura, educación y patrimonio"
+  }
+]
