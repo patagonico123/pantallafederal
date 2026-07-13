@@ -2,25 +2,23 @@
 ====================================================
  Pantalla Federal
  script.js
- Versión 0.5 - Navegación provincias
+ Versión 0.5 - Provincias por regiones
 ====================================================
 */
 
 
-const provincias = await respuesta.json();
-
-alert("Provincias cargadas: " + provincias.length);
+const botonProvincias = document.getElementById("btnProvincias");
 
 
+botonProvincias.addEventListener("click", mostrarProvincias);
 
-async function cargarProvincias() {
 
-    const respuesta = await fetch("datos/provincias.json");
 
-    const provincias = await respuesta.json();
+async function mostrarProvincias() {
 
 
     const contenido = document.getElementById("contenido");
+
 
     contenido.innerHTML = "";
 
@@ -33,55 +31,60 @@ async function cargarProvincias() {
 
 
 
-    const regiones = {
+    const respuesta = await fetch("datos/provincias.json");
 
-        "Norte": [
-            "noa",
-            "nea"
-        ],
 
-        "Centro": [
-            "centro",
-            "amba"
-        ],
-
-        "Cuyo": [
-            "cuyo"
-        ],
-
-        "Patagonia": [
-            "patagonia"
-        ]
-
-    };
+    const provincias = await respuesta.json();
 
 
 
-    Object.keys(regiones).forEach(nombreRegion => {
+    const grupos = [
+
+        {
+            nombre: "Norte",
+            regiones: ["noa", "nea"]
+        },
+
+        {
+            nombre: "Centro",
+            regiones: ["centro", "amba"]
+        },
+
+        {
+            nombre: "Cuyo",
+            regiones: ["cuyo"]
+        },
+
+        {
+            nombre: "Patagonia",
+            regiones: ["patagonia"]
+        }
+
+    ];
+
+
+
+    grupos.forEach(grupo => {
 
 
         const tituloRegion = document.createElement("h3");
 
-        tituloRegion.textContent = nombreRegion;
-
+        tituloRegion.textContent = grupo.nombre;
 
         contenido.appendChild(tituloRegion);
 
 
 
-        const contenedor = document.createElement("div");
+        const caja = document.createElement("div");
 
-        contenedor.className = "menu";
+        caja.className = "menu";
 
 
 
-        provincias
+        provincias.forEach(provincia => {
 
-            .filter(provincia =>
-                regiones[nombreRegion].includes(provincia.region)
-            )
 
-            .forEach(provincia => {
+            if (grupo.regiones.includes(provincia.region)) {
 
 
                 const tarjeta = document.createElement("div");
@@ -103,19 +106,20 @@ async function cargarProvincias() {
                 `;
 
 
-                contenedor.appendChild(tarjeta);
+                caja.appendChild(tarjeta);
 
 
-            });
+            }
+
+
+        });
 
 
 
-        contenido.appendChild(contenedor);
+        contenido.appendChild(caja);
 
 
     });
 
+
 }
-
-
-  
